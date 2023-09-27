@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeJs</title>
+</head>
+
+<body>
+    <h1>Welcome Friendz</h1>
+    <!--=====================================-->
+    <p id="d1">Welcome to my page....</p>
+
+     <!--=====================================-->
+    <div class="e1">Element-1</div>
+    <div class="e2">Element-2</div>
+    <div class="e3">Element-3</div>
+
+     <!--=====================================-->
+     <h2>Background color change</h2>
+     <h2>Background color</h2>
+
+
+    <script>
+        const col1 = document.getElementsByTagName("*");
+        let t1 = " ";
+        for (let i = 0; i < col1.length; i++) {
+            t1 += col1[i].tagName + "<br>";
+        }
+        document.getElementById("d1").innerHTML = t1;
+
+//============================================================
+
+        const col2 = document.getElementsByClassName("e1");
+        console.log(col2)
+        col2[0].innerHTML="Welcome";
+
+        //==========================================================
+
+        const nodelist = document.querySelectorAll("h2");
+
+        for(let i=0; i<nodelist.length; i++){
+            nodelist[i].style.background = "pink";
+        }
+//===========================================================================
+
+
+    </script>
+
+
+</body>
+
+</html>
